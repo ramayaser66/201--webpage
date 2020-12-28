@@ -1,0 +1,27 @@
+h1 {
+    font-size: x-large;
+    font-style: oblique;
+    color:maroon; 
+    border: double black 6px ;
+    margin-top: 10px;
+    align-items: center;
+    padding: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAnO_J5dXkBc9YOQ13lqMX1NcROuzhIiI8w&usqp=CAU);
+}
+
+body {
+    background-color: rgb(154, 193, 206);
+}
+
+p {
+    font-size: medium;
+    position:relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:rgb(61, 4, 4);
+    margin-left: 70px;
+    border: maroon dotted;
+    padding: 70px;
+    background-color: rgb(214, 243, 242);
+}
+
