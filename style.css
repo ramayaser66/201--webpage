@@ -11,6 +11,7 @@ h1 {
 
 body {
     background-color: rgb(154, 193, 206);
+
 }
 
 p {
@@ -20,8 +21,15 @@ p {
     margin-bottom: 50px;
     color:rgb(61, 4, 4);
     margin-left: 70px;
+    margin-right: 70px ;
     border: maroon dotted;
     padding: 70px;
     background-color: rgb(214, 243, 242);
 }
 
+
+img {
+    align-items: center;
+    margin-right: 350px;
+    margin-left: 350px;
+}
