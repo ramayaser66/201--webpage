@@ -7,38 +7,71 @@ if (welcomeNote === true) {
     alert(" let's go! ");
 
     var q1 = prompt(" what is your name? ");
-    //console.log(q1);  
-    alert(" Nice to meet you " + q1);
+    console.log(q1);  
+    alert(" Nice to meet you " + q1 + " hope you enjoy this site ");
 
+    var keepscore = 0;
     var q2 = prompt(" Do you think we're of the same age? ");
-    //console.log(q2);
+    console.log(q2);
     if (q2 === 'yes') {
-        alert(' that is correct! ');
+        alert(' shall we check ? ');
+      var  keep= keepscore + 1; 
+
+        var userAge = prompt("how old are you?");
+        console.log(userAge); 
+        if (userAge === '22') {
+            alert(" we are of the same age! ");
+            var kee = keep +1;
+        } else if (userAge > '22') {
+            alert(" I guess Iam younger :( ");
+        } else if (userAge < '22') {
+            alert(" I am older than you :) ");
+        }
+
     } else {
-        alert(" Guess again! ");
+        alert(" let's check shall we ");
+        if (userAge === '22') {
+            alert(" we are of the same age! ");
+        } else if (userAge > '22') {
+            alert(" I guess Iam younger :( ");
+        } else if (userAge < '22') {
+            alert(" I am older than you :) ");
+        }
+
     }
 
 
-    var q3 = prompt(" How old do you think I am ?");
+    // var q10 = prompt(" How old do you think I am ?");
     //console.log(q3); 
-    if (q3 == '22') {
-        alert("Right again");
-    } else if (q3 > '22') {
-        alert(" try younger :( ");
-    } else if (q3 < '22') {
-        alert("try older :) ");
+    // if (q10 == '22') {
+    //  alert("Right again");
+    //  } else if (q10 > '22') {
+    // alert(" try younger :( ");
+    //  } else if (q10 < '22') {
+    // alert("try older :) ");
+    // }
+
+    var q3 = prompt('do you think I am doing a good job so far');
+     console.log(q3);
+    if (q3.toLowerCase() === 'yse') {
+        alert(' thank you that is so sweet ');
+        ke= kee +1; 
+    } else if (q3.toLowerCase() === 'no') {
+        alert('thank you for being honest, i will try to do my best');
     }
 
 
-    var q4 = prompt("would you say I am an animle person ?");
+    var q4 = prompt("do you think I like animals ?");
     //console.log(q4);
     if (q4.toLocaleLowerCase() === 'yes') {
-        alert("indeed I am my friend!  ");
-        var animale = prompt("Who do you think I like more Cats or Dogs!");
+        alert("indeed I do my friend!  ");
+        k = ke +1;
+        var animale = prompt("what do you think I like more Cats or Dogs!");
         if (animale === 'dogs') {
             alert(" you're on a roll :)");
+            var l = k +1; 
         } else if (animale === 'cats') {
-            alert(" I like them, bit not as much ")
+            alert(" I like them, bit not as much ");
         }
     } else if (q4.toLocaleLowerCase() === 'no') {
         alert(" sadly you are mistaken ");
@@ -49,7 +82,8 @@ if (welcomeNote === true) {
     //console.log(q5);
     switch (q5) {
         case 'yes':
-            alert("you are right, I love sports")
+            alert("you are right, I love sports");
+            var m = l +1; 
             break;
 
         case 'no':
@@ -62,13 +96,90 @@ if (welcomeNote === true) {
 
 
 
+    //var  note = prompt (" guess my favorite number, you have 4 guesses");
+    //  console.log(note);
+    alert (' the next game should be fun, try to guess!');
+    alert (" you have 4 guesses");
+    for (var i = 0; ((i < 4) && (note !== '7')); i++) {
+      
+
+        var note = prompt(" guess my favorite number");
+        console.log(note);
+        //alert(" you have 4 guesses");
+
+        alert("I'll give you a hint, it's lower than 10 and some say it's a lucky number! ");
 
 
+        var int = parseInt(note);
+        if (int == 7) {
+            alert("that's correct");
+            var n = m +1;
+        }   if (int < 7) {
+            alert(" try higher!");
+
+        }    else if (int > 7) {
+            alert(" try lower! ");
+        } else {
+
+            break;
+        } 
+            
+        
+    
+    
+        
+    } 
+    alert(" the correct answer is 7 "); 
+
+   // var movieType = ['comedy', 'horror', 'superheros', "crime"];
+    //console.log(movieType [1]); 
+ //var q = movieType.length;
+   // for ( var i =0; ((i < 6) && (i !== movieType.length)); i++){
+     //  var q7 = prompt(" what type of movies do you think I prefer? ");
+      // console.log (q7); 
+       //console.log(movieType[i]);
+        //alert ("you have 6 guesses");
 
 
+    //}
+   // var t = 0;
+    //var check = false;
+   //do{
+    
+     // var q7 = prompt(" what type of movies do you think I prefer? ");
+      //  console.log(j);
+        //var j=0;
+      //t++;
 
 
+    //} while (movieType.length < 6  &&  q7 !== movieType.length){
+      //  alert (" again! ")
+    //}
 
+    var movieType = ['comedy', 'horror', 'superheros', "crime", 'foreign', 'anime'];
+
+    for( var i =0; i < movieType.length; i++){
+        var q7 = prompt(" what type of movies do you think I prefer? ");
+    console.log(movieType[i]);
+if (q7 === movieType){
+    alert(" correct!, that's one of them");
+    var o = n +1; 
+   
+
+}else if (q7 !== movieType.length){
+
+    alert (" care to try again? ");
+    
+
+}
+    }
+    alert(" the correct answers: comedy, horror, superheros, crime, foreign, anime "); 
+
+    var score = prompt (" wanna know your score ");
+    if (score = 'yes'){
+        alert (" your score is " + o ); 
+        
+    }
 
 
 

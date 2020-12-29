@@ -14,8 +14,9 @@ body {
 
 }
 
-p {
-    font-size: medium;
+main {
+    font-size: large;
+    font-weight: 800;
     position:relative;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -24,12 +25,47 @@ p {
     margin-right: 70px ;
     border: maroon dotted;
     padding: 70px;
-    background-color: rgb(214, 243, 242);
+  
+   background-image: url(https://as2.ftcdn.net/jpg/01/93/74/19/500_F_193741978_n9YyqFquMXsnLydHqWc1NTBOcyByehYI.jpg);
 }
 
+h2 { font-size: larger;
+      font-style: oblique;
+}
+
+ ul {
+    list-style-type:circle;  
+}
 
 img {
     align-items: center;
     margin-right: 350px;
     margin-left: 350px;
+}
+
+.TopTen {
+    font-size: 150%;
+    font-style: oblique;
+    color: rgb(5, 34, 71);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 20px;
+    background-image: url('https://image.shutterstock.com/image-vector/online-cinema-art-movie-watching-260nw-586719869.jpg');
+
+
+
+}
+
+ol {
+    font-size: large;
+    font-weight: 900;
+    border: 5px solid midnightblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding:10px;
+ color: rgb(71, 2, 2);
+ background-image: url(https://as2.ftcdn.net/jpg/01/93/74/19/500_F_193741978_n9YyqFquMXsnLydHqWc1NTBOcyByehYI.jpg);
+
 }
