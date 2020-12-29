@@ -2,6 +2,7 @@
 alert("welcome to my page");
 var welcomeNote = confirm(" Do you feel like playing a game? ");
 console.log(welcomeNote);
+var counterOfCorrectAnswers = 0;
 
 if (welcomeNote === true) {
     alert(" let's go! ");
@@ -15,13 +16,13 @@ if (welcomeNote === true) {
     console.log(q2);
     if (q2 === 'yes') {
         alert(' shall we check ? ');
-      var  keep= keepscore + 1; 
+        counterOfCorrectAnswers++;
 
         var userAge = prompt("how old are you?");
         console.log(userAge); 
         if (userAge === '22') {
             alert(" we are of the same age! ");
-            var kee = keep +1;
+            counterOfCorrectAnswers++;
         } else if (userAge > '22') {
             alert(" I guess Iam younger :( ");
         } else if (userAge < '22') {
@@ -55,7 +56,7 @@ if (welcomeNote === true) {
      console.log(q3);
     if (q3.toLowerCase() === 'yse') {
         alert(' thank you that is so sweet ');
-        ke= kee +1; 
+        counterOfCorrectAnswers++;
     } else if (q3.toLowerCase() === 'no') {
         alert('thank you for being honest, i will try to do my best');
     }
@@ -65,11 +66,11 @@ if (welcomeNote === true) {
     //console.log(q4);
     if (q4.toLocaleLowerCase() === 'yes') {
         alert("indeed I do my friend!  ");
-        k = ke +1;
+        counterOfCorrectAnswers++;
         var animale = prompt("what do you think I like more Cats or Dogs!");
         if (animale === 'dogs') {
             alert(" you're on a roll :)");
-            var l = k +1; 
+            counterOfCorrectAnswers++;
         } else if (animale === 'cats') {
             alert(" I like them, bit not as much ");
         }
@@ -83,7 +84,7 @@ if (welcomeNote === true) {
     switch (q5) {
         case 'yes':
             alert("you are right, I love sports");
-            var m = l +1; 
+            counterOfCorrectAnswers++;
             break;
 
         case 'no':
@@ -113,7 +114,7 @@ if (welcomeNote === true) {
         var int = parseInt(note);
         if (int == 7) {
             alert("that's correct");
-            var n = m +1;
+            counterOfCorrectAnswers++;
         }   if (int < 7) {
             alert(" try higher!");
 
@@ -159,11 +160,12 @@ if (welcomeNote === true) {
     var movieType = ['comedy', 'horror', 'superheros', "crime", 'foreign', 'anime'];
 
     for( var i =0; i < movieType.length; i++){
-        var q7 = prompt(" what type of movies do you think I prefer? ");
+        var q7 =  prompt(" what type of movies do you think I prefer? ");
     console.log(movieType[i]);
 if (q7 === movieType){
     alert(" correct!, that's one of them");
-    var o = n +1; 
+    counterOfCorrectAnswers++;
+    break;
    
 
 }else if (q7 !== movieType.length){
@@ -177,7 +179,7 @@ if (q7 === movieType){
 
     var score = prompt (" wanna know your score ");
     if (score = 'yes'){
-        alert (" your score is " + o ); 
+        alert (" your score is " + counterOfCorrectAnswers++); 
         
     }
 
