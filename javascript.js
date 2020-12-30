@@ -116,7 +116,7 @@ if (welcomeNote === true) {
 	}
 	alert(" the correct answer is 7 ");
 
-*/
+
 	
 	/*var condition= false;
 
