@@ -134,10 +134,13 @@ function six(){
 	}
 	alert(" the correct answer is 7 ");
 
-}
+// <<<<<<< khaled-drive-lab-04
+// }
 
 
-six();
+// six();
+// =======
+// >>>>>>> main
 
 	
 /*	var condition= false;
