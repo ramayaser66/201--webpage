@@ -1,4 +1,5 @@
 'use strict';
+
 alert("welcome to my page");
 var welcomeNote = confirm(" Do you feel like playing a game? ");
 console.log(welcomeNote);
@@ -6,23 +7,28 @@ var counterOfCorrectAnswers = 0;
 
 if (welcomeNote === true) {
 	alert(" let's go! ");
-
+function one(){
 	var q1 = prompt(" what is your name? ");
 	console.log(q1);
 	alert(" Nice to meet you " + q1 + " hope you enjoy this site ");
+}
+one();
 
-	var keepscore = 0;
+
+var keepscore = 0;
+
+function two(){
 	var q2 = prompt(" Do you think we're of the same age? ");
 	console.log(q2);
 	if (q2 === 'yes') {
 		alert(' shall we check ? ');
-		counterOfCorrectAnswers++;
+	keepscore++;
 
 		var userAge = prompt("how old are you?");
 		console.log(userAge);
 		if (userAge === '22') {
 			alert(" we are of the same age! ");
-			counterOfCorrectAnswers++;
+			keepscore++;
 		} else if (userAge > '22') {
 			alert(" I guess Iam younger :( ");
 		} else if (userAge < '22') {
@@ -41,27 +47,32 @@ if (welcomeNote === true) {
 			alert(" I am older than you :) ");
 		}
 
-	}
+	}}
+two();
 
-
+function three(){
 	var q3 = prompt('do you think I am doing a good job so far');
 	console.log(q3);
+
 	if (q3.toLowerCase() === 'yes') {
 		alert(' thank you that is so sweet ');
-		counterOfCorrectAnswers++;
+		keepscore++;
 	} else if (q3.toLowerCase() === 'no') {
 		alert('thank you for being honest, i will try to do my best');
 	}
+}
 
-	var q4 = prompt("do you think I like animals ?");
+three();
+function four(){
+var q4 = prompt("do you think I like animals ?");
 	console.log(q4);
 	if (q4.toLocaleLowerCase() === 'yes') {
 		alert("indeed I do my friend!  ");
-		counterOfCorrectAnswers++;
+		keepscore++;
 		var animale = prompt("what do you think I like more Cats or Dogs!");
 		if (animale === 'dogs') {
 			alert(" you're on a roll :)");
-			counterOfCorrectAnswers++;
+			keepscore++;
 		} else if (animale === 'cats') {
 			alert(" I like them, bit not as much ");
 		}
@@ -69,13 +80,15 @@ if (welcomeNote === true) {
 		alert(" sadly you are mistaken ");
 	}
 
-
+}
+four();
+function five(){
 	var q5 = prompt(" DO think i like sports?  ");
 	console.log(q5);
 	switch (q5) {
 		case 'yes':
 			alert("you are right, I love sports");
-			counterOfCorrectAnswers++;
+			keepscore++;
 			break;
 
 		case 'no':
@@ -83,9 +96,14 @@ if (welcomeNote === true) {
 			break;
 	}
 
+}
+five();
+alert("your score is "+ keepscore);
 
 	alert(' the next game should be fun, try to guess!');
 	alert(" you have 4 guesses");
+
+function six(){
 	for (var i = 0;
 		((i < 4) && (note !== '7')); i++) {
 
@@ -100,7 +118,7 @@ if (welcomeNote === true) {
 		var int = parseInt(note);
 		if (int == 7) {
 			alert("that's correct");
-			counterOfCorrectAnswers++;
+			keepscore++;
 		}
 		if (int < 7) {
 			alert(" try higher!");
@@ -116,9 +134,16 @@ if (welcomeNote === true) {
 	}
 	alert(" the correct answer is 7 ");
 
+// <<<<<<< khaled-drive-lab-04
+// }
+
+
+// six();
+// =======
+// >>>>>>> main
 
 	
-	/*var condition= false;
+/*	var condition= false;
 
 	for (var g = 0; g < movieType.length;g++ ) {
 		
@@ -136,8 +161,12 @@ if (welcomeNote === true) {
 
             else if (movieType[m]!= q7){
                 alert("try again");
-               continue;}}}*/
-    
+
+
+               continue;}}}
+*/			   saven();
+			   
+function saven(){    
                var movieType = ['comedy', 'horror', 'superheros', "crime", 'foreign', 'anime'];
                for (var k =0  ; k<movieType.length ; k++){
 
@@ -161,11 +190,11 @@ if (welcomeNote === true) {
             }
 
             if (k==6){
-      console.log(" im in if "); 
+    
                 alert("this is the numbers " + movieType.toString());
                break;
                 }    
                 else {
                 alert("try again");
                 } 
-            }
+			}}}
