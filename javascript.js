@@ -15,7 +15,7 @@ if (welcomeNote === true) {
     fifthFunction();
     sixthFunction();
     saventhFunction();
-    scoreFunction();
+    scoreFun();
 
     function firstFunction() {
         var q1 = prompt(" what is your name? ");
@@ -120,7 +120,7 @@ if (welcomeNote === true) {
             if (int == 7) {
                 alert("that's correct");
                 counterOfCorrectAnswers++;
-                break;
+                i = 5;
             } if (int < 7) {
                 alert(" try higher!");
                 alert("I'll give you a hint, it's lower than 10 and some say it's a lucky number! ");
@@ -128,18 +128,17 @@ if (welcomeNote === true) {
             } else if (int > 7) {
                 alert(" try lower! ");
                 alert("I'll give you a hint, it's lower than 10 and some say it's a lucky number! ");
-            } else {
-                alert(" the correct answer is 7 ");
-                break;
             }
 
 
 
 
+
         }
+        alert(" the correct answer is 7 ");
     }
 
-    function scoreFunction() {
+    function scoreFun() {
         var score = prompt(" wanna know your score ");
         if (score = 'yes') {
             alert(" your score is " + counterOfCorrectAnswers++ + 'out of 7');
@@ -167,6 +166,7 @@ if (welcomeNote === true) {
             }
 
             if (k == 6) {
+
 
                 alert("these are the correct answers " + movieType.toString());
                 break;
