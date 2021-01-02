@@ -2,7 +2,7 @@
 
 alert("welcome to my page");
 var welcomeNote = confirm(" Do you feel like playing a game? ");
-console.log(welcomeNote);
+
 var counterOfCorrectAnswers = 0;
 
 if (welcomeNote === true) {
@@ -16,16 +16,16 @@ if (welcomeNote === true) {
     sixthFunction();
     saventhFunction();
     scoreFun();
-
+    
     function firstFunction() {
         var q1 = prompt(" what is your name? ");
-        console.log(q1);
+       
         alert(" Nice to meet you " + q1 + " hope you enjoy this site ");
     }
 
     function secondFunaction() {
         var q2 = prompt(" Do you think we're of the same age? ");
-        console.log(q2);
+   
         if (q2 === 'yes') {
             alert(' shall we check ? ');
             counterOfCorrectAnswers++;
@@ -58,10 +58,10 @@ if (welcomeNote === true) {
 
     function thirdFunction() {
         var q3 = prompt('do you think I am doing a good job so far');
-        console.log(q3);
+     
         if (q3.toLowerCase() === 'yes') {
             alert("thank you, you're so nice!");
-            console.log(q3);
+            
 
             counterOfCorrectAnswers++;
         } else if (q3.toLowerCase() === 'no') {
@@ -139,9 +139,11 @@ if (welcomeNote === true) {
     }
 
     function scoreFun() {
+       
         var score = prompt(" wanna know your score ");
         if (score = 'yes') {
             alert(" your score is " + counterOfCorrectAnswers++ + 'out of 7');
+          alert("thank you for playing ")
 
         }
     }
@@ -183,6 +185,7 @@ if (welcomeNote === true) {
 
 
     }
+    
 }
 
 else if (welcomeNote === false) {
