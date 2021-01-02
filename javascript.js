@@ -153,7 +153,7 @@ if (welcomeNote === true) {
         for (var k = 0; k < movieType.length; k++) {
 
             var userGuess = prompt("what type of movies do you think I prefer? ");
-            console.log('test' + userGuess)
+           
             for (var j = 0; j < movieType.length; j++) {
 
                 if (userGuess == movieType[j]) {
@@ -161,7 +161,7 @@ if (welcomeNote === true) {
 
                     k = 6;
                     j = 6;
-                    console.log("i'm here in if ");
+                   
                 }
 
 
