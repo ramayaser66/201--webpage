@@ -69,3 +69,23 @@ ol {
  background-image: url(https://as2.ftcdn.net/jpg/01/93/74/19/500_F_193741978_n9YyqFquMXsnLydHqWc1NTBOcyByehYI.jpg);
 
 }
+
+p::first-letter {
+    color: #350404;
+    font-size: xx-large;
+  }
+
+
+  ::selection {
+    color: rgb(3, 23, 65);
+    background: rgb(98, 175, 98);
+  }
+
+  ul:hover {
+    background-color: rgb(164, 196, 226);
+  }
+
+  
+  ol, li:hover {
+    background-color: rgb(161, 218, 210);
+  }
